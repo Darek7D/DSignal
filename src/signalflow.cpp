@@ -2,14 +2,14 @@
 #include <dsignal/signalvector.h>
 #include <dsignal/signalflowsession.h>
 #include <cassert>
+#include <stdexcept>
 
 namespace dsignal {
 
 SignalFlow::SignalFlow():
     m_session(nullptr),
     m_vector(nullptr)
-{
-}
+{}
 
 SignalFlow::SignalFlow(SignalFlowSession *session, const SignalVector &signal_vector):
     m_session(session),

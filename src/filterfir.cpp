@@ -11,9 +11,7 @@ namespace dsignal {
 
 FilterFir::FilterFir(size_t max_buffer_size, bool throw_overflow):
     SignalProcessorBuffered(max_buffer_size, throw_overflow)
-{
-
-}
+{}
 
 FilterFir::FilterFir(const std::vector<double> &a, size_t max_buffer_size, bool throw_overflow):
     SignalProcessorBuffered(max_buffer_size, throw_overflow),

@@ -1,8 +1,6 @@
 #include <dsignal/additionner.h>
 #include <stdexcept>
 #include <cfenv>
-#include <limits>
-#include <cmath>
 
 #ifdef USE_FENV_ACCESS
 #pragma STDC FENV_ACCESS ON
@@ -13,9 +11,7 @@ namespace dsignal {
 Additionner::Additionner(double addend, size_t max_size, bool throw_overflow):
     SignalProcessorBuffered(max_size, throw_overflow),
     m_addend(addend)
-{
-
-}
+{}
 
 void Additionner::push(double value)
 {

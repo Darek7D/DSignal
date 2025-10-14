@@ -6,8 +6,7 @@ namespace dsignal {
 SignalProcessorBuffered::SignalProcessorBuffered(size_t max_size, bool throw_overflow):
     m_max_size(max_size),
     m_throw_overflow(throw_overflow)
-{
-}
+{}
 
 void SignalProcessorBuffered::push(double value)
 {

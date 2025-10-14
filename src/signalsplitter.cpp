@@ -1,15 +1,12 @@
 #include <dsignal/signalsplitter.h>
 #include <dsignal/signalprocessorsimple.h>
 #include <cassert>
-#include <iostream>
 
 namespace dsignal {
 
 SignalSplitter::SignalSplitter(std::string name):
     SignalVector(0, SignalProcessorSimple(), name)
-{
-
-}
+{}
 
 SignalSplitter &SignalSplitter::split(SignalVector &signal_vector_destination)
 {

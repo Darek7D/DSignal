@@ -1,6 +1,5 @@
 #include <dsignal/arithmeticmean.h>
 #include <stdexcept>
-#include <cmath>
 #include <cfenv>
 
 namespace dsignal {
@@ -13,9 +12,7 @@ ArithmeticMean::ArithmeticMean(size_t mean_samples, size_t max_size, bool throw_
     SignalProcessorBuffered(max_size, throw_overflow),
     m_mean_samples(mean_samples),
     m_current_sum(0)
-{
-
-}
+{}
 
 void ArithmeticMean::push(double value)
 {

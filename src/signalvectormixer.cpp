@@ -6,8 +6,7 @@ namespace dsignal {
 
 SignalVectorMixer::SignalVectorMixer():
     m_mixer_operation(nullptr)
-{
-}
+{}
 
 SignalVectorMixer::SignalVectorMixer(const SignalProcessorMixerMatrix &mixer_matrix,
                                      MixerOperation *mixer_operation,

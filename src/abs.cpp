@@ -9,9 +9,7 @@ namespace dsignal {
 
 Abs::Abs(size_t max_size, bool throw_overflow):
     SignalProcessorBuffered(max_size, throw_overflow)
-{
-
-}
+{}
 
 void Abs::push(double value)
 {

@@ -1,6 +1,5 @@
 #include <dsignal/dcmeanremoval.h>
 #include <stdexcept>
-#include <cmath>
 #include <cfenv>
 
 namespace dsignal {
