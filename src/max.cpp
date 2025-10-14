@@ -10,9 +10,7 @@ namespace dsignal {
 Max::Max(size_t max_size, bool throw_overflow):
     SignalProcessorBuffered(max_size, throw_overflow),
     m_max(std::numeric_limits<int>::min())
-{
-
-}
+{}
 
 void Max::push(double value)
 {

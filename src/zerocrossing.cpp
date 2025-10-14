@@ -1,5 +1,4 @@
 #include <dsignal/zerocrossing.h>
-#include <limits>
 #include <cmath>
 
 namespace dsignal {
@@ -9,9 +8,7 @@ ZeroCrossing::ZeroCrossing(size_t max_size, bool throw_overflow):
     m_zero_crossing(0),
     m_last_value(0),
     m_has_last_value(false)
-{
-
-}
+{}
 
 void ZeroCrossing::push(double value)
 {

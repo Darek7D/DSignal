@@ -6,9 +6,7 @@ namespace dsignal {
 SignalProcessorSimple::SignalProcessorSimple():
     m_value(0.0),
     m_has(false)
-{
-
-}
+{}
 
 double SignalProcessorSimple::pop()
 {
